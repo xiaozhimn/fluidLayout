@@ -1,0 +1,14 @@
+{
+    "name": "waterFall",
+    "version": "1.0",
+    "desc": "",
+    "cover": "",
+    "tag":"瀑布流",
+    "author": {
+        "name": "卢石",
+        "email": "lushi@taobao.com",
+        "page": ""
+    },
+    "type": "kissy-gallery",
+    "type-url": "http://gallery.kissyui.com/guide"
+}
