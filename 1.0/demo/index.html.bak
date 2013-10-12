@@ -97,7 +97,7 @@
 				]
 			});
 		}
-		S.use("fluidLayout", function(S, WaterFall) {
+		S.use("", function(S, WaterFall) {
 			new WaterFall({
 				"container":"wf-main",
 				"colWidth":244,

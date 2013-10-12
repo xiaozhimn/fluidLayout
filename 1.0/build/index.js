@@ -1,10 +1,10 @@
-/*
+﻿/*
 combined files : 
 
-gallery/WaterFall/1.0/index
+1.0/index
 
 */
-KISSY.add('gallery/WaterFall/1.0/index',function (S) {
+KISSY.add('gallery/fluidLayout/1.0/index',function (S) {
 	var D = S.DOM;
 	function WaterFall(param) {
 	    this.id = typeof param.container == 'string' ? D.get("#" + param.container) : param.container;
