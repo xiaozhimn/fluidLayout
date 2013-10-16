@@ -6,14 +6,14 @@ combined files :
 */
 KISSY.add('gallery/fluidLayout/1.0/index',function (S) {
 	var D = S.DOM;
-	function WaterFall(param) {
+	function FluidLayout(param) {
 	    this.id = typeof param.container == 'string' ? D.get("#" + param.container) : param.container;
 	    this.colWidth = param.colWidth;
 	    this.colCount = param.colCount || 4;
 	    this.cls = param.cls && param.cls != '' ? param.cls : 'wf-cld';
 		this.init();
 	}
-	S.augment(WaterFall, {
+	S.augment(FluidLayout, {
 		 maxArr:function(arr){
 	        var len = arr.length,temp = arr[0];
 	        for(var ii= 1; ii < len; ii++){
@@ -62,5 +62,5 @@ KISSY.add('gallery/fluidLayout/1.0/index',function (S) {
 	        this.id.style.height = this.maxArr(col) + "px";
 		}					
 	});
-	return WaterFall;
+	return FluidLayout;
 });

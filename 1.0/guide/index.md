@@ -5,19 +5,19 @@ waterFall是。
 * 版本：1.0
 * 作者：卢石
 * 标签：
-* demo：[http://gallery.kissyui.com/waterFall/1.0/demo/index.html](http://gallery.kissyui.com/waterFall/1.0/demo/index.html)
+* demo：[http://gallery.kissyui.com/fluidLayout/1.0/demo/index.html](http://gallery.kissyui.com/fluidLayout/1.0/demo/index.html)
 
 ## 初始化组件
 
-    S.use('gallery/waterFall/1.0/index', function (S, WaterFall) {
-         var waterFall = new WaterFall();
+    S.use('gallery/fluidLayout/1.0/index', function (S, FluidLayout) {
+         var FluidLayout = new FluidLayout();
     })
 
 ## API说明
    
    初始化瀑布组建例子见下:
    
-   new Waterfall({
+   new FluidLayout({
 	    "container":"parent",
 	    "colWidth":77,
 	    "colCount":3,
