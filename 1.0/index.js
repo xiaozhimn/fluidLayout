@@ -1,7 +1,7 @@
-KISSY.add(function (S) {
+KISSY.add('gallery/fluidLayout/1.0/index',function (S) {
 	var D = S.DOM;
-	function FluidLayout(el, param) {
-	    this.id = el;
+	function FluidLayout(param) {
+	    this.id = typeof param.container == 'string' ? D.get("#" + param.container) : param.container;
 	    this.colWidth = param.colWidth;
 	    this.colCount = param.colCount || 4;
 	    this.cls = param.cls && param.cls != '' ? param.cls : 'wf-cld';
