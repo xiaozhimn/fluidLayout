@@ -1,4 +1,4 @@
-KISSY.add(function (S) {
+KISSY.add("fluidLayout",function (S) {
 	var D = S.DOM;
 	function FluidLayout(el, param) {
 	    this.id = el;
