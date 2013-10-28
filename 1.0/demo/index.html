@@ -98,7 +98,8 @@
 			});
 		}
 		S.use("gallery/fluidLayout/1.0/index", function(S, FluidLayout) {
-			new FluidLayout(D.get("#wf-main"),{
+			new FluidLayout({
+				"container":"wf-main",
 				"colWidth":244,
 				"colCount":4
 			});
