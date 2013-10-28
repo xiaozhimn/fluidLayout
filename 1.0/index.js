@@ -1,13 +1,13 @@
 KISSY.add(function (S) {
 	var D = S.DOM;
-	function WaterFall(param) {
-	    this.id = typeof param.container == 'string' ? D.get("#" + param.container) : param.container;
+	function FluidLayout(el, param) {
+	    this.id = el;
 	    this.colWidth = param.colWidth;
 	    this.colCount = param.colCount || 4;
 	    this.cls = param.cls && param.cls != '' ? param.cls : 'wf-cld';
 		this.init();
 	}
-	S.augment(WaterFall, {
+	S.augment(FluidLayout, {
 		 maxArr:function(arr){
 	        var len = arr.length,temp = arr[0];
 	        for(var ii= 1; ii < len; ii++){
@@ -56,5 +56,5 @@ KISSY.add(function (S) {
 	        this.id.style.height = this.maxArr(col) + "px";
 		}					
 	});
-	return WaterFall;
+	return FluidLayout;
 });

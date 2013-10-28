@@ -83,7 +83,7 @@
 	</div>
 	
 	<script>
-		var S = KISSY,$=S.Node.all;
+		var S = KISSY,$=S.Node.all,D=S.DOM;
 		if (S.Config.debug) {
 			var srcPath = "../../../";
 			S.config({
@@ -98,8 +98,7 @@
 			});
 		}
 		S.use("gallery/fluidLayout/1.0/index", function(S, FluidLayout) {
-			new FluidLayout({
-				"container":"wf-main",
+			new FluidLayout(D.get("#wf-main"),{
 				"colWidth":244,
 				"colCount":4
 			});
